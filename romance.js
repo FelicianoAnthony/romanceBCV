@@ -1,11 +1,14 @@
 function showDiv(stuff) {
     var x = document.getElementById("welcomeDiv");
+    var btn = document.getElementById("btn");
     if (x.style.display === "none") {
         x.style.display = "block";
         //document.write('im open')
         generatePoem()
+        if (btn.value === "Create Poem!") btn.value = "Close window";
     } else {
         x.style.display = "none";
+        if (btn.value === "Close window") btn.value = "Create Poem!";
         //document.write('im closing...')
     }
 }
@@ -17,6 +20,7 @@ function generatePoem() {
   var text = document.getElementsByName("title")[0].value;
   var numLines = document.getElementsByName("first_box")[0].value;
   var numWords = document.getElementsByName("second_box")[0].value;
+
   numLines = parseInt(numLines)
   numWords = parseInt(numWords)
 
