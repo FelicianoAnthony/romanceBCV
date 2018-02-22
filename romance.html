@@ -1,0 +1,58 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<h1>Markov Chain Generator</h1>
+
+<link rel="stylesheet" href="romance.css">
+<script type="text/javascript" src="romance.js"></script>
+
+
+</head>
+<div id="boxed">
+
+  <label for="title"> 
+  	<b> Paste Text Here</b> 
+  </label>
+
+  <textarea cols ="85" rows = "30" id="title" name="title">this is some text 
+that I'm testing 
+out to see if it
+works!!!$ 
+  </textarea> 
+
+
+  <form action="/action_page.php">
+
+  	<center>
+  <br><b> Total Number of Lines</b> <br>
+  <input type="text" name="first_box" value="">
+  <br><br>
+  <b> Total Number of Words </b><br>
+  <input type="text" name="second_box" value="">
+  <br><br>
+  <input type="button" id = 'btn' name="answer" value="Create Poem!" onclick="generatePoem();" />
+
+  <div id="welcomeDiv"  style="display:none;" class="answer_list" >
+    <label for="title"> Heres the Markov chain...
+    </label>
+      <textarea cols ="90" rows = "30" id="toggle-box" name="title">
+      </textarea>
+  </div>
+
+  
+  </form> 
+
+</center>
+
+
+</div>
+
+<body>
+
+<footer>Copyright &copy; @Me</footer>
+
+</body>
+</html>
