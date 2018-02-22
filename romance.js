@@ -61,6 +61,10 @@ function parseText (corpus) {
 
   var cleanStr = "";
 
+
+  var cleaning = corpus.split('\n');
+  corpus = cleaning.join(' ');
+
   for (var i=0; i < corpus.length; i++) {
     var lowerCase = corpus[i].toLowerCase();
     if (alpha.includes(lowerCase) === true) {
